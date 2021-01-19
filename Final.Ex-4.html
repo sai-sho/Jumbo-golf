@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <link href="Final.Ex-4.css" rel="stylesheet"  type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="jumbo">
+  <div class="wrapper">
+    <nav class="header">
+      <h1 class="header-logo">
+        <figure>
+          <img src="ジャンボロゴ.png">
+        </figure>
+        <a href="Final_Ex.html"><p>総和ジャンボ<br>ゴルフ</p></a>
+      </h1>
+      
+      <div class="header-nav">
+        <ul class="header-nav-left">
+          <li class="nav1"><a href="Final.Ex-1.html">お問い合わせ</a></li>
+          <li class="nav2"><a href="Final.Ex-2.html">お知らせ</a></li>
+          <li class="nav3"><a href="Final.Ex-3.html">営業時間・料金</a></li>
+        </ul>
+
+        <ul class="header-nav-right">
+          <li class="nav4"><a href="Final.Ex-4.html">施設紹介</a></li>
+            <li class="nav5"><a href="Final.Ex-5.html">アクセス</a></li>
+            <li class="nav6"><a href="Final.Ex-6.html">レッスン</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <main>
+
+    <div class="dam"></div>
+    <header class="page-header">
+      <h1 class="title-A">施設紹介</h1>
+      <p>施設紹介に関するコメント</p>
+    </header>
+    <div class="title-B">
+      <h1>バンカー・パッティンググリーン練習場</h1>
+    </div>
+    <p>1時間300円</p>
+
+
+
+    <div class="slide">
+      <img src="バンカー練習場.jpg" />
+      <img src="グリーン練習場.jpeg" />
+    </div>
+    <p hidden>
+      <input type="range" id="slide_speed" value="2000" min="5000" max="10000">
+    </p>
+    <script>
+      window.addEventListener('load', function () {
+        viewSlide('.slide img');
+      });
+      function viewSlide(className, slideNo = -1)
+      {
+        let imgArray = document.querySelectorAll(className);
+        if (slideNo >= 0) {
+          //初回以外は現在のスライドを消す
+          imgArray[slideNo].style.opacity = 0;
+        }
+        slideNo++;
+        if (slideNo >= imgArray.length) {
+          slideNo = 0; //次のスライドがなければ最初のスライドへ戻る
+        }
+        imgArray[slideNo].style.opacity = 1;
+        let msec = document.getElementById('slide_speed').value;
+        setTimeout(function(){viewSlide(className, slideNo);}, msec);
+      }
+      </script>
+    <div class="vac"></div>
+    <h1><hr>駐車場</h1>
+    <p>広い駐車場完備！80台収容！</p>
+    <figure>
+      <img src="駐車場.jpg">
+    </figure>
+  </main>
+  </div>
+</body>

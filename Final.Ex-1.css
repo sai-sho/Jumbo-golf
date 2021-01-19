@@ -1,0 +1,222 @@
+html, body, div, span, iframe, h1, p, a,img, dl, dt, dd,  ul, li, figure, footer, header, nav{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+figure, footer, header, nav, section, main {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+li {
+  list-style: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', Arial, Roboto, "Droid Sans", "游ゴシック体", "Yu Gothic", YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  font-weight: normal;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #262626;
+  background-color: #fff;
+  text-size-adjust: 100%;
+}
+.header {
+  background-color: #fff;
+  height: 70px;
+  border-top: 39px solid #323940;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  display: block;
+  font-weight: bold;
+}
+
+
+.header-logo {
+  width: 190px;
+  height: 120px;
+  z-index: 1;
+  position: absolute;
+  top: -43px;
+  left: 50%;
+  margin-left: -95px;
+}
+
+.header-logo > a > p{
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -82px;
+  z-index: 2;
+  text-align: center;
+  font-size: 28px;
+  color: #1a1a1a;
+}
+
+.header-nav-left , .header-nav-right{
+
+  background-color: #e3fda7;
+}
+
+.header-nav-left {
+  left: 0;
+  padding: 0 88px 0 0px;
+  width: 50%;
+}
+
+.header-nav-right {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding:  0 0 0 88px;
+  width: 50%;
+}
+
+ul {
+  display: block;
+}
+
+.nav1, .nav2 ,.nav3, .nav4, .nav5, .nav6 {
+  width: 30%;
+}
+
+.nav1 {
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.header-nav > ul > li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-nav > ul > li > a {
+  font-size: 1.067em;
+  line-height: 1.4;
+  text-align: center;
+  display: block;
+  padding: 26px 10px 22px;
+  position: relative;
+}
+
+.top {
+  color: #fff;
+  text-align: center;
+  padding-top: 130px;
+  margin-top: -105px;
+  height: 1052px;
+  width: 100%;
+  position: relative;
+}
+
+.top > .top-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #fff;
+}
+
+.golf-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.expo {
+  margin-right:45%;
+  padding: 50px 30px 10px 120px;
+  font-size: 26px;
+  position: absolute;
+  top:77px;
+  color: #fff;
+}
+
+
+
+.lead-form{
+  text-align: center;
+  font-size:20px;
+}
+form{
+  width:460px;
+  margin:0 auto;
+  position: absolute;
+  top: 240px;
+  left: 54%;
+  color: white;
+}
+
+.item{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.label{
+  float: left;
+  margin-right: 20px;
+  width:135px;
+  border-left: solid 3px #e0505d;
+  padding-left: 10px;
+}
+
+.inputs{
+  float: left;
+  width:300px;
+}
+
+input[type="text"],input[type="email"]{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding:10px;
+  font-size: 15px;
+}
+
+textarea{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding: 10px;
+  height: 160px;
+  font-size: 15px;
+}
+
+.btn-area{
+  text-align: center;
+}
+
+input[type="submit"]{
+  background: #e0505c;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+input[type="reset"]{
+  background: #aaa;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
